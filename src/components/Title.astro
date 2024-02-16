@@ -1,0 +1,10 @@
+---
+interface Props {
+    title: string;
+}
+const {title = "ValorDefaul"} = Astro.props;
+---
+
+<h2 class="text-3xl font-bold tracking-wider lg:text-4xl 2xl:text-5xl text-gray-900 dark:text-orange-500 font-signika">
+    {title}
+</h2>
