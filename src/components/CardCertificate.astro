@@ -1,0 +1,29 @@
+---
+interface props{
+    title: String,
+    nameCertificate: String,
+    plataforma: String,
+    date: String
+}
+
+const {title="valueDafault", nameCertificate="valueDafault", plataforma="valueDafault", date="valueDafault"} =  Astro.props;
+---
+
+<article class="w-full bg-white rounded-2xl shadow-xl flex lg:hover:scale-95 lg:hover:duration-300">
+    <div class="w-full flex flex-col justify-center p-5">
+        <div class="flex border-b pb-3 justify-between">
+            <header>
+                <div class="font-caveat text-lg font-signika text-sky-600">{title}</div>
+                <span class="text-base font-semibold font-roboto text-slate-900">{nameCertificate}</span>
+            </header>
+            <a href="/" class="shrink-0 h-[30px] w-[30px] border border-slate-200 hover:border-slate-300 rounded-full shadow inline-flex items-center justify-center focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition-colors duration-150 ease-in-out" aria-label="Like">
+                <svg class="w-5 stroke-red-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  </svg>                              
+            </a>
+        </div>
+        <h5 class="text-base font-bold text-slate-900">{plataforma}</h5>
+        <div class="text-slate-600 text-sm line-clamp-3 my-2">🗓️ {date}</div>
+    </div>
+</article>

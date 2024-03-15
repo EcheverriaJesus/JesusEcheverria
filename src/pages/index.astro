@@ -1,20 +1,45 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HeaderCompo from "../components/HeaderCompo.astro";
-import Experience from "./Experience.astro";
-import Skill from "../components/Skill.astro";
-import Title from "../components/Title.astro";
-import PerfilA from "../components/PerfilAnimation.astro";
+import Experiencia from "../pages/Experience.astro";
+import Technologies from "../pages/Technologies.astro";
+import Certificates from "../pages/Certificates.astro";
+import Proyects from "./Proyects.astro";
+import Recursos from "./Recursos.astro";
+import Services from "./Services.astro";
+import Contact from "./Contact.astro";
 ---
 
 <Layout title="Jesus Echeverria">
-	<header class="relative flex w-full h-screen">
-		<div class="w-60 h-48 absolute blur-2xl rounded-full bg-[#1c9da1]"></div>
+	<header id="/" class="flex w-full h-screen">
 		<HeaderCompo />
 	</header>
-	<!-- <main class="flex w-full h-screen">
-		<Title title="Experiencia:" />
-		
-	</main> -->
 
+	<main
+		class="flex flex-col items-center w-full px-4 md:px-6 lg:px-20 xl:px-60 2xl:px-80 space-y-20 2xl:space-y-40"
+	>
+		<div id="Experience" class="w-full">
+			<Experiencia />
+		</div>
+		<div class="w-full">
+			<Technologies />
+		</div>
+		<div class="w-full">
+			<Certificates />
+		</div>
+		<div id="Proyects" class="w-full">
+			<Proyects />
+		</div>
+		<div id="Recursos" class="w-full">
+			<Recursos />
+		</div>
+		<!-- <div id="Services" class="w-full">
+			<Services />
+		</div> -->
+	</main>
+	<footer id="Contact">
+		<Contact />
+	</footer>
 </Layout>
+
+<style></style>

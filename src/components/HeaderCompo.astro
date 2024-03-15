@@ -1,67 +1,45 @@
 ---
 import Navbar from "./React/NavBar";
 import Carrousel from "./React/Carrousel";
-import CodigoAnteriorIndex from "../pages/CodigoAnteriorIndex.astro";
 import SVGComponent from "./SVGComponent.astro";
-import Title from "../components/Title.astro";
 import TitleMain from "../components/TitleMain.astro";
-import Description from "../pages/Markdowm/Description.md";
+import PerfilAnimation from "./PerfilAnimation.astro";
 ---
 
 <div class="w-full h-full">
-    <Navbar client:load />
-    <section
-        class="flex w-full h-10 justify-center items-center bg-gray-100 dark:bg-[#062333] gap-2.5 sm:gap-10 md:gap-16 lg:hidden"
-    >
-        <SVGComponent />
-    </section>
+  
+  <Navbar client:only />
+  <section
+    class="flex w-full h-10 justify-center items-center bg-gray-100 dark:bg-[#062333] gap-2.5 sm:gap-10 md:gap-16 lg:hidden"
+  >
+    <SVGComponent />
+  </section>
 
+  <section
+    class="flex w-full h-full flex-col items-center font-bold pt-7 lg:-pt-0 lg:justify-center xl:flex-row xl:justify-between xl:px-60 2xl:px-80"
+  >
     <div
-        class="flex w-full h-full flex-col items-center justify-center font-bold pt-0 lg:pt-0 font-cantora space-y-2 2xl:space-y-4"
+      class="flex flex-col items-center font-bold font-cantora space-y-2 2xl:space-y-4 xl:w-1/2 xl:items-start"
     >
-        <span class="text-xl lg:text-2xl 2xl:text-4xl dark:text-white"
-            >Hola 👋🏼, soy</span
-        >
-        <TitleMain title="Jesús Noé Echeverria" />
-        <span
-            class="text-lg lg:text-2xl 2xl:text-3xl dark:text-white font-signika"
-            >Ingeniero en Sistemas Computacionales</span
-        >
-        <span class="text-xl lg:text-2xl 2xl:text-4xl text-rose-700 dark:text-yellow-500"
-            >Web Developer!!</span
-        >
-        <a href='https://www.instagram.com/jesus_echeverria_01/' target='_blank' rel="noopener noreferrer">
-            <img class="w-72 mt-10 rounded-full hover:scale-110 duration-200 hover:grayscale" src="https://echeverriajesus.github.io/JesusEcheverria.github.io/static/media/PerfilN.817844543df566342ba7.jpg" alt="" />
-        </a>
+      <span
+        class="text-xl lg:text-2xl 2xl:text-3xl dark:text-white font-signika"
+        >Hola 👋🏼, soy</span
+      >
+      <TitleMain title="Jesús Noé Echeverria" />
+      <span class="text-base lg:text-xl 2xl:text-2xl dark:text-white font-signika"
+        >Ingeniero en Sistemas Computacionales</span
+      >
+      <span
+        class="text-lg lg:text-xl 2xl:text-3xl text-rose-700 dark:text-yellow-400"
+        >Web Developer!!</span
+      >
+      <p class="text-sm lg:text-base 2xl:text-lg dark:text-gray-300 font-normal font-signika">+2 años de experiencia en desarrollo web.</p>
     </div>
-    
-
-    <!-- <div class="px-10">
-        <Carrousel client:visible />
-    </div> -->
-    <!--  <div
-        class="flex flex-col gap-2 text-white font-bold font-roboto pt-0 lg:pt-0"
-    >
-        <span
-            class="text-black dark:text-white text-2xl lg:text-3xl pb-3 font-signika 2xl:text-4xl"
-            >Hola 👋, Soy</span
-        >
-        <h1
-            class="hidden lg:flex text-orange-500 text-4xl font-signika 2xl:text-5xl"
-        >
-            Jesús Noé Echeverria Medina
-        </h1>
-        <h1 class="text-orange-500 text-4xl font-cantora lg:hidden">
-            Jesús Echeverria
-        </h1>
-        <span
-            class="text-3xl text-black dark:text-white lg:text-3xl font-signika"
-            >Ingeniero en Sistemas Computacionales</span
-        >
-        <span
-            class="text-red-500 text-2xl lg:text-3xl pt-2 dark:text-yellow-300 font-cantora"
-            >Web Developer!!</span
-        >
-    </div> -->
-    <!-- <CodigoAnteriorIndex /> -->
+    <div class="pt-12 lg:pt-0 xl:w-1/2 ">
+      <PerfilAnimation />
+    </div>
+  </section>
+  <!-- <div class="px-10">
+    <Carrousel client:visible />
+  </div> -->
 </div>
