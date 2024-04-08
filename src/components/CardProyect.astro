@@ -1,16 +1,19 @@
 ---
 interface props {
+    img: String,
     url: String,
     title: String,
     description: String,
     date: String
 }
 
-const {url="ValorDefault", title="ValorDefault", description="ValorDefault", date="ValorDefault"} = Astro.props;
+const {img="ValorDefault", url="ValorDefault", title="ValorDefault", description="ValorDefault", date="ValorDefault"} = Astro.props;
 ---
 
 <article class="w-full flex flex-col bg-white rounded-lg shadow-md px-4 py-5 flex-shrink-0 lg:flex-shrink hover:scale-95 hover:duration-300 border border-slate-300 dark:border-slate-700 dark:bg-[#152730fd]">
-    <img class="rounded-md pb-5" src={url} alt="ImagenProyecto">
+    <a href={url} target="_blank" rel='noopener noreferrer'>
+        <img class="rounded-md pb-5" src={img} alt="ImagenProyecto">
+    </a>
     <h5 class="font-bold font-signika border-t pt-2 dark:text-white">{title}</h5>
     <p class="text-gray-800 text-base dark:text-slate-200">{description}</p>
     <span class="text-gray-600 font-semibold dark:text-slate-300">{date}</span>

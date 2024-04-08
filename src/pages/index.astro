@@ -6,12 +6,11 @@ import Technologies from "../pages/Technologies.astro";
 import Certificates from "../pages/Certificates.astro";
 import Proyects from "./Proyects.astro";
 import Recursos from "./Recursos.astro";
-import Services from "./Services.astro";
 import Contact from "./Contact.astro";
 ---
 
 <Layout title="Jesus Echeverria">
-	<header id="/" class="flex w-full h-screen">
+	<header id="Header" class="flex w-full h-screen">
 		<HeaderCompo />
 	</header>
 
@@ -33,13 +32,8 @@ import Contact from "./Contact.astro";
 		<div id="Recursos" class="w-full">
 			<Recursos />
 		</div>
-		<div id="Services" class="w-full">
-			<Services />
-		</div>
 	</main>
-	<footer id="Contact">
+	<footer class="pt-16" id="Contact">
 		<Contact />
 	</footer>
 </Layout>
-
-<style></style>

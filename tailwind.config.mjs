@@ -5,11 +5,11 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				'acme': ["Acme", "sans"],
 				'roboto': ["Roboto", "sans-serif"],
-				'montserrat': ["Montserrat", "sans-serif"],
 				'cantora': ["Cantora One", "sans-serif"],
-				'signika': ["Signika Negative", "sans-serif"]
+				'metal': ["Metal Mania", "sans-serif"],
+				'signika': ["Signika Negative", "sans-serif"],
+				
 			},
 			animation: {
 				'expand-vertically': 'expand-vertically 0.4s ease-out',
