@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import iu from '../../../public/imgs/iu.png';
 
 const TabsComponent = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -88,7 +89,7 @@ const TabsComponent = () => {
                 <a href='https://uiverse.io/profile/EcheverriaJesus' target='_blank' rel='noopener noreferrer' className="text-base font-bold text-blue-600 animate-bounce pt-2">UIVERSE -&gt;</a>
                 <div className="text-slate-600 line-clamp-3 my-2">Plataforma donde puedes crear componentes HTML, CSS Y TAILWIND.</div>
                 <div className="flex pt-3 w-full justify-center">
-                  <img className="w-auto md:w-1/2 rounded-md" src="../../../public/imgs/iu.png"/>
+                  <img className="w-auto md:w-1/2 rounded-md" src={iu}/>
                 </div>
               </div>
             </article>
