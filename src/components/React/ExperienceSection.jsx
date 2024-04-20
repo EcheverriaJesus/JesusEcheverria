@@ -21,7 +21,7 @@ export default function ExperienceSection() {
                 }`}>
                 <h4 className="text-sm lg:text-base 2xl:text-lg dark:text-white font-normal font-signika">💼 Consultora de software <b className="text-orange-700 dark:text-yellow-400">NISSIAPP</b> - Desarrollador web FullStack.</h4>
                 <span className="text-sm lg:text-base 2xl:text-lg dark:text-white font-normal font-signika pb-3"
-                >🗓️Agosto de 2023 - Actual.</span>
+                >🗓️Agosto de 2023 - Marzo de 2024.</span>
                 <ul className="list-disc pl-7 lg:pl-10 text-sm text-gray-800 lg:text-base 2xl:text-lg dark:text-white font-normal font-signika space-y-1">
                     <li>Lenguajes Javascript y PHP.</li>
                     <li>Equipos de desarrollo gestionado en jira.</li>

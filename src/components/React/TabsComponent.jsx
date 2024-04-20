@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import iu from '../../../public/imgs/iu.png';
+import { iu } from '../../../public/imgs/iu.png';
 
 const TabsComponent = () => {
   const [activeTab, setActiveTab] = useState(1);
