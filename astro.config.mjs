@@ -6,6 +6,6 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(),react()],
-  site: 'https://echeverriajesus.github.io/JesusEcheverria/',
-  base: 'my-repo',
+  site: 'https://EcheverriaJesus.github.io',
+  base: 'JesusEcheverria',
 });
