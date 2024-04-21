@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { iu } from '../../../public/imgs/iu.png';
+import iu from '../../../public/imgs/iu.png';
+import devto from '../../../public/imgs/devto.png';
+import imgYoutube from '../../../public/imgs/youtube.png';
 
 const TabsComponent = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -89,7 +91,7 @@ const TabsComponent = () => {
                 <a href='https://uiverse.io/profile/EcheverriaJesus' target='_blank' rel='noopener noreferrer' className="text-base font-bold text-blue-600 animate-bounce pt-2">UIVERSE -&gt;</a>
                 <div className="text-slate-600 line-clamp-3 my-2">Plataforma donde puedes crear componentes HTML, CSS Y TAILWIND.</div>
                 <div className="flex pt-3 w-full justify-center">
-                  <img className="w-auto md:w-1/2 rounded-md" src={iu}/>
+                  <img className="w-auto md:w-1/2 rounded-md" src={iu.src}/>
                 </div>
               </div>
             </article>
@@ -114,7 +116,7 @@ const TabsComponent = () => {
                 <a href='https://dev.to/echeverriajesus' target='_blank' rel='noopener noreferrer' className="text-base font-bold text-blue-600 animate-bounce pt-2">DEV.TO -&gt;</a>
                 <div className="text-slate-600 line-clamp-3 my-2">Plataforma donde puedes realizar blogs.</div>
                 <div className="flex pt-3 w-full justify-center">
-                  <img className="w-auto md:w-1/2 rounded-md" src="../../../public/imgs/devto.png"/>
+                  <img className="w-auto md:w-1/2 rounded-md" src={devto.src}/>
                 </div>
               </div>
             </article>
@@ -139,7 +141,7 @@ const TabsComponent = () => {
                 <a href='https://dev.to/echeverriajesus' target='_blank' rel='noopener noreferrer' className="text-base font-bold text-blue-600 animate-bounce pt-2">YOUTUBE -&gt;</a>
                 <div className="text-slate-600 line-clamp-3 my-2">Plataforma YouTube.</div>
                 <div className="flex pt-3 w-full justify-center">
-                  <img className="w-auto md:w-1/2 rounded-md" src="../../../public/imgs/youtube.png"/>
+                  <img className="w-auto md:w-1/2 rounded-md" src={imgYoutube.src}/>
                 </div>
               </div>
             </article>
