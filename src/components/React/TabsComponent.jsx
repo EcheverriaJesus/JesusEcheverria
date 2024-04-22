@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import iu from '../../../public/imgs/iu.png';
-import devto from '../../../public/imgs/devto.png';
-import imgYoutube from '../../../public/imgs/youtube.png';
+import iu from '/src/imgs/iu.png';
+import devto from '/src/imgs/devto.png';
+import imgYoutube from '/src/imgs/youtube.png';
 
 const TabsComponent = () => {
   const [activeTab, setActiveTab] = useState(1);
